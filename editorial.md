@@ -11,12 +11,24 @@ a series of virtual screening publications have proposed potentially interesting
 open source and open data has lowered the cost of running cheminformatics experiments. During a recent
 telon with our Editorial Board the question came up if we wanted to have thematic series in the 
 [Journal of Cheminformatics](https://jcheminf.biomedcentral.com/) on
-COVID19. We decided not. This editorial outlines what we think the cheminformatics could do to easy the 
+COVID19. We decided not.
+
+This editorial outlines what we think the cheminformatics could do to easy the 
 *second wave* but in particular what it should do to be prepared for the next pandemic.
+We first identify the major research questions around the COVID-19 pandemic where cheminformatics
+can contribute. Second, we identify how the field of cheminformatics should continue to
+become more open to be more prepared for the next viral outbreak, hoping we can prevent it
+from becoming a pandemic.
 
-## Chemical information
+## How does cheminformatics contribute to virus research
 
-### Emergency Access
+...
+
+## Better prepared with more open cheminformatics
+
+### Chemical information
+
+#### Emergency Access
 
 Many publishers removed the paywalls to their COVID19-related content. We stress this is
 not Open Science and at best *emergency Open Access*. However, collected in the CORD-19 data set,
@@ -25,31 +37,31 @@ population of open science resources [REFS]. However, scholars may loose access 
 after the paywalls are put up again, making it hard to study the details behind the knowledge they
 find in databases.
 
-### Annotated literature
+#### Annotated literature
 
-#### Keywords on steriods
+##### Keywords on steriods
 
 InChIs and/or SMILES for the chemicals described in articles
 
-#### Open Citations
+##### Open Citations
 
-### Access to Open Data
+#### Access to Open Data
 
-#### Physicochemical Properties
+##### Physicochemical Properties
 
 Open pKa, logD, ... data, where each measured property is backed by a literature reference.
 
-### Interoperability
+#### Interoperability
 
 
-## Infrastructure
+### Infrastructure
 
-### Easy to deploy cheminformatics
+#### Easy to deploy cheminformatics
 
-### Application Programming Interfaces
+#### Application Programming Interfaces
 
 
-## New avenues for dissemination
+### New avenues for dissemination
 
 A final question that should be asked, is the journal article even the right platform for share
 knowledge during a pandemic. Of course, peer review remains essential, but perhaps the peer review
@@ -62,6 +74,10 @@ Second, journal articles
 suffer from the "version of record" limitation: once published, making corrections is hard. Where
 open science can make frequent releases ("release soon, release often"), a journal article release
 is in most cases a one time event, and while corrigenda and errata are possible, they are rare.
+
+## Conclusion
+
+
 
 ## References
 

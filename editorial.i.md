@@ -1,8 +1,8 @@
-# If not a COVID-19 special issue, what does it need from cheminformatics?
+# If not a COVID-19 special issue, what does a pandemic need from cheminformatics?
 
 (authors in alphabetical order of their surnames)
 
-Rajarshi Guha, 0000-0001-7403-8819, **Affiliation**
+Rajarshi Guha, 0000-0001-7403-8819, **Affiliation** <br />
 Egon Willighagen, 0000-0001-7542-0286, Dept of Bioinformatics - BiGCaT, NUTRIM, Maastricht University
 
 The COVID-19 pandemic has resulted in a spur of research. As if everyone like to contribute to a solution
@@ -18,7 +18,12 @@ COVID19. We decided not. This editorial outlines what we think the cheminformati
 
 ### Emergency Access
 
-
+Many publishers removed the paywalls to their COVID19-related content. We stress this is
+not Open Science and at best *emergency Open Access*. However, collected in the CORD-19 data set,
+the papers are available for text and data mining [<cite>Q93445532</cite>] which can still benefit
+population of open science resources [REFS]. However, scholars may loose access to the literature
+after the paywalls are put up again, making it hard to study the details behind the knowledge they
+find in databases.
 
 ### Annotated literature
 

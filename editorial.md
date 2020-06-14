@@ -2,23 +2,29 @@
 
 (authors in alphabetical order of their surnames)
 
-Rajarshi Guha, 0000-0001-7403-8819, **Affiliation** <br />
+Rajarshi Guha, 0000-0001-7403-8819, Vertex Pharmaceuticals, Boston, MA
+02210<br />
 Egon Willighagen, 0000-0001-7542-0286, Dept of Bioinformatics - BiGCaT, NUTRIM, Maastricht University
 
-The COVID-19 pandemic has resulted in a spur of research. As if everyone like to contribute to a solution
-from their area of expertise. It also led to new publications in the area of cheminformatics. For example,
-a series of virtual screening publications have proposed potentially interesting candidates. Indeed,
-open source and open data has lowered the cost of running cheminformatics experiments. During a recent
-telon with our Editorial Board the question came up if we wanted to have thematic series in the 
+The COVID-19 pandemic has led to a spike in research output
+surrounding various aspects of the pandemic, ranging in scale from the
+molecular to the population level. Unsurprisingly, there has been a
+number of preprints in the field of cheminformatics that attempt to
+address questions surrounding the disease. For example, a series of
+virtual screening publications have proposed potentially interesting
+candidates. Indeed, Open Source and Open Data has lowered the cost of
+running cheminformatics experiments. During a recent conversation with our
+Editorial Board we discussed the possibility of a thematic issue in the
 [Journal of Cheminformatics](https://jcheminf.biomedcentral.com/) on
-COVID19. We decided not.
+COVID19. We decided not to pursue such an effort.
 
-This editorial outlines what we think the cheminformatics could do to easy the 
-*second wave* but in particular what it should do to be prepared for the next pandemic.
-We first identify the major research questions around the COVID-19 pandemic where cheminformatics
-can contribute. Second, we identify how the field of cheminformatics should continue to
-become more open to be more prepared for the next viral outbreak, hoping we can prevent it
-from becoming a pandemic.
+This editorial outlines what we believe cheminformatics could
+contribute to studies of pandemic diseases. We first identify the
+major research questions around the COVID-19 pandemic where
+cheminformatics can contribute. Second, we identify how the field of
+cheminformatics should continue to become more open to be more
+prepared for the next viral outbreak, hoping we can contribute to
+mitigation efforts to prevent it from becoming a pandemic.
 
 ## How does cheminformatics contribute to virus research
 

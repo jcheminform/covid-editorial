@@ -13,10 +13,17 @@ number of preprints in the field of cheminformatics that attempt to
 address questions surrounding the disease. For example, a series of
 virtual screening publications have proposed potentially interesting
 candidates. Indeed, Open Source and Open Data has lowered the cost of
-running cheminformatics experiments. During a recent conversation with our
-Editorial Board we discussed the possibility of a thematic issue in the
+running cheminformatics experiments.
+
+During a recent conversation with our Editorial Board we discussed the
+possibility of a thematic issue in the
 [Journal of Cheminformatics](https://jcheminf.biomedcentral.com/) on
-COVID19. We decided not to pursue such an effort.
+COVID19. We decided not to pursue such an effort, mainly since
+much of the work that might be topical for the journal was focused on applying
+pre-existing pipelines to prioritize compounds as potential
+candidates. In addition, given the urgency of the situation we felt
+that computational predictions without some form of experimental
+verification would not be very useful.
 
 This editorial outlines what we believe cheminformatics could
 contribute to studies of pandemic diseases. We first identify the

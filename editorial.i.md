@@ -2,23 +2,40 @@
 
 (authors in alphabetical order of their surnames)
 
-Rajarshi Guha, 0000-0001-7403-8819, **Affiliation** <br />
+Rajarshi Guha, 0000-0001-7403-8819, Vertex Pharmaceuticals, 50
+Northern Ave, Boston, MA 02210 <br />
 Egon Willighagen, 0000-0001-7542-0286, Dept of Bioinformatics - BiGCaT, NUTRIM, Maastricht University
 
-The COVID-19 pandemic has resulted in a spur of research. As if everyone like to contribute to a solution
-from their area of expertise. It also led to new publications in the area of cheminformatics. For example,
-a series of virtual screening publications have proposed potentially interesting candidates. Indeed,
-open source and open data has lowered the cost of running cheminformatics experiments. During a recent
-telon with our Editorial Board the question came up if we wanted to have thematic series in the 
-[Journal of Cheminformatics](https://jcheminf.biomedcentral.com/) on
-COVID19. We decided not.
+The COVID-19 pandemic has led to a spike in research output
+surrounding various aspects of the pandemic, ranging in scale from the
+molecular to the population level. Unsurprisingly, there has been a
+number of preprints in the field of cheminformatics that attempt to
+address questions surrounding the disease. For example, a series of
+virtual screening publications have proposed potentially interesting
+candidates. Indeed, Open Source and Open Data has lowered the cost of
+running cheminformatics experiments.
 
-This editorial outlines what we think the cheminformatics could do to easy the 
-*second wave* but in particular what it should do to be prepared for the next pandemic.
-We first identify the major research questions around the COVID-19 pandemic where cheminformatics
-can contribute. Second, we identify how the field of cheminformatics should continue to
-become more open to be more prepared for the next viral outbreak, hoping we can prevent it
-from becoming a pandemic.
+During a recent conversation with our Editorial Board we discussed the
+possibility of a thematic issue in the
+[Journal of Cheminformatics](https://jcheminf.biomedcentral.com/) on
+COVID19. We decided not to pursue such an effort, mainly since much of
+the work that might be topical for the journal was focused on applying
+pre-existing pipelines to prioritize compounds as potential
+candidates. As noted earlier, we have decided that other
+venues would be more suitable to applications of such standard
+pipelines .In addition, given the urgency of the situation we felt that
+computational predictions without some form of experimental
+verification would not be very useful.
+
+Even though we have decided to not focus on COVID-19 publications, we
+believe that it is important to consider how cheminformatics can 
+contribute to studies of pandemic diseases. This editorial addresses
+this question. We first identify the
+major research questions around the COVID-19 pandemic where
+cheminformatics can contribute. Second, we identify how the field of
+cheminformatics should continue to become more open to be more
+prepared for the next viral outbreak, hoping we can contribute to
+mitigation efforts to prevent it from becoming a pandemic.
 
 ## How does cheminformatics contribute to virus research
 
@@ -39,6 +56,8 @@ find in databases.
 
 #### Annotated literature
 
+Keywords etc, InChI and SMILES
+
 ##### Keywords on steriods
 
 InChIs and/or SMILES for the chemicals described in articles
@@ -56,24 +75,40 @@ Open pKa, logD, ... data, where each measured property is backed by a literature
 
 ### Infrastructure
 
-#### Easy to deploy cheminformatics
-
-#### Application Programming Interfaces
+Along with FAIR data, infrastructure that enables researchers to use
+cheminformatics methods and toolkits, and then deploy solutions in a
+straightforward fashion can enable reuse and thereby encourage
+application and replication within the community. To a large degree,
+Open Source toolkits have democratized access to cheminformatics
+methods, and platforms such as KNIME enable easy deployment of
+solutions. Resources such as Github and Bitbucket are also critical
+infrastructure that enable the community to access, modify and
+contribute to published code. We note that the infrastructure
+described here should also apply to data. While version control
+platforms may not be suitable for large datasets, resources such as
+Figshare and Zenodo are capable to handling datasets and their
+associated metadata.
 
 
 ### New avenues for dissemination
 
-A final question that should be asked, is the journal article even the right platform for share
-knowledge during a pandemic. Of course, peer review remains essential, but perhaps the peer review
-of an article does not lead to the best results. Indeed, several COVID19 articles have been
-retracted shortly after they were published [REFS]. Here, Open Science takes an intrinsically
-different approach: it is not less than a handful of scholars that decide what is knowledge and
-what is not, but it is curation and continuous use that highlights errors.
+A final question that should be asked, is the journal article even the
+right platform to share knowledge during a pandemic. While peer review
+is important, it is not a guarantee fo reliability. Indeed, several
+COVID19 articles have been retracted shortly after they were published
+[REFS]. While it is unlikely that peer review will be replaced,
+mechanisms to support curation and usage tracking will enhance
+rapid publication processes.
 
-Second, journal articles
-suffer from the "version of record" limitation: once published, making corrections is hard. Where
-open science can make frequent releases ("release soon, release often"), a journal article release
-is in most cases a one time event, and while corrigenda and errata are possible, they are rare.
+Another aspect, relevant to rapid publication needs is that journal
+articles suffer from the "version of record" limitation: once
+published, making corrections is hard, though corrigenda and
+errata are possible, they are rare. Efforts such as the Live Journal
+of Computational Molecular Science (LiveCoMS) [REF], which support the
+publication of "live" reviews (i.e., review articles that are updated
+on an ongoing basis) highlight how published articles can undergo
+continuous revision.
+
 
 ## Conclusion
 
@@ -81,4 +116,6 @@ is in most cases a one time event, and while corrigenda and errata are possible,
 
 ## References
 
-<references/>
+1. <a name="citeref1"></a>Wang LL, Wang LL, Lo K, Chandrasekhar Y, Reas R, Yang J, et al. CORD-19: The Covid-19 Open Research Dataset. arXiv. 2020. 
+
+2. <a name='citeref2'></a>https://www.livecomsjournal.org/

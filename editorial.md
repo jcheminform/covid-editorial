@@ -18,15 +18,19 @@ running cheminformatics experiments.
 During a recent conversation with our Editorial Board we discussed the
 possibility of a thematic issue in the
 [Journal of Cheminformatics](https://jcheminf.biomedcentral.com/) on
-COVID19. We decided not to pursue such an effort, mainly since
-much of the work that might be topical for the journal was focused on applying
+COVID19. We decided not to pursue such an effort, mainly since much of
+the work that might be topical for the journal was focused on applying
 pre-existing pipelines to prioritize compounds as potential
-candidates. In addition, given the urgency of the situation we felt
-that computational predictions without some form of experimental
+candidates. As noted earlier, we have decided that other
+venues would be more suitable to applications of such standard
+pipelines.In addition, given the urgency of the situation we felt that
+computational predictions without some form of experimental
 verification would not be very useful.
 
-This editorial outlines what we believe cheminformatics could
-contribute to studies of pandemic diseases. We first identify the
+Even though we have decided to not focus on COVID-19 publications, we
+believe that it is important to consider how cheminformatics can 
+contribute to studies of pandemic diseases. This editorial addresses
+this question. We first identify the
 major research questions around the COVID-19 pandemic where
 cheminformatics can contribute. Second, we identify how the field of
 cheminformatics should continue to become more open to be more
@@ -35,7 +39,7 @@ mitigation efforts to prevent it from becoming a pandemic.
 
 ## How does cheminformatics contribute to virus research
 
-...
+Check with EB about domains  - contact by email [Raj]
 
 ## Better prepared with more open cheminformatics
 

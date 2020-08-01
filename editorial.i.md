@@ -1,4 +1,4 @@
-# If not a COVID-19 special issue, what does a pandemic need from cheminformatics?
+# What is the Role of Cheminformatics in a Pandemic?
 
 (authors in alphabetical order of their surnames)
 
@@ -8,7 +8,7 @@ Egon Willighagen, 0000-0001-7542-0286, Dept of Bioinformatics - BiGCaT, NUTRIM, 
 
 The COVID-19 pandemic has led to a spike in research output
 surrounding various aspects of the pandemic, ranging in scale from the
-molecular to the population level. Unsurprisingly, there has been a
+molecular to the population level.  There has been a
 number of preprints in the field of cheminformatics that attempt to
 address questions surrounding the disease. For example, a series of
 virtual screening publications have proposed potentially interesting
@@ -23,29 +23,53 @@ the work that might be topical for the journal was focused on applying
 pre-existing pipelines to prioritize compounds as potential
 candidates. As noted earlier, we have decided that other
 venues would be more suitable to applications of such standard
-pipelines .In addition, given the urgency of the situation we felt that
+pipelines, In addition, given the urgency of the situation we felt that
 computational predictions without some form of experimental
 verification would not be very useful.
 
-Even though we have decided to not focus on COVID-19 publications, we
-believe that it is important to consider how cheminformatics can 
-contribute to studies of pandemic diseases. This editorial addresses
-this question. We first identify the
-major research questions around the COVID-19 pandemic where
-cheminformatics can contribute. Second, we identify how the field of
-cheminformatics should continue to become more open to be more
-prepared for the next viral outbreak, hoping we can contribute to
-mitigation efforts to prevent it from becoming a pandemic.
-
 ## How does cheminformatics contribute to virus research
 
-...
+Even though we have decided to not focus on COVID-19 publications, we
+believe that it is important to consider how cheminformatics can 
+contribute to studies of pandemic diseases. This editorial attempts to
+highlight some features of the field that will enable researchers to
+make use of chemical information in an efficient and rapid manner to
+address future diseases.
+
+
+Scientifically, there are numerous areas where cheminformatics plays a
+role in anti-viral research, such as in virtual screening and
+optimizing chemical structures. While we won't assume that a given
+topical area will be more or less relevant for future research, we
+believe that principles and processes (and their associated
+infrastructure) within the cheminformatics can enable rapid and robust 
+research when the need arises.
 
 ## Better prepared with more open cheminformatics
 
-### Chemical information
+While it is evident that Open Science and Open Data have enabled a
+plethora of studies on various aspects of COVID-19, ensuring that
+future efforts can build on current research will require broad
+acceptance (and adherence) to community standards. This requires clear
+articulation of the relevant standards (e.g., file formats) as well as
+best practices. It is not much use if standards are defined, yet
+researchers do not employ them. In our view, funders and journals can
+play a critical role in ensuring that standards and best practices are
+adhered to.
 
-#### Emergency Access
+### Annotated literature
+
+While not really a standard, the chemical literature can benefit from
+annotation. The most obvious first step is to ensure that are
+molecules referred to in a manuscript is associated with a SMILES or
+InChI string. Ideally, structure files in some standard format would
+also be included. While it may be onerous to as authors to annotate
+non-chemical terms using formal vocabularies, this could be a service
+provided by publishers. A combination of chemical identifiers plus
+publisher-generated annotations would be a powerful way to enhance
+reuse of published work.
+
+### Emergency Access
 
 Many publishers removed the paywalls to their COVID19-related content. We stress this is
 not Open Science and at best *emergency Open Access*. However, collected in the CORD-19 data set,
@@ -53,16 +77,6 @@ the papers are available for text and data mining [<cite>Q93445532</cite>] which
 population of open science resources [REFS]. However, scholars may loose access to the literature
 after the paywalls are put up again, making it hard to study the details behind the knowledge they
 find in databases.
-
-#### Annotated literature
-
-Keywords etc, InChI and SMILES
-
-##### Keywords on steriods
-
-InChIs and/or SMILES for the chemicals described in articles
-
-##### Open Citations
 
 #### Access to Open Data
 

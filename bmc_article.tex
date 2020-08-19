@@ -1,0 +1,391 @@
+%% BioMed_Central_Tex_Template_v1.06
+%%                                      %
+%  bmc_article.tex            ver: 1.06 %
+%                                       %
+
+%%IMPORTANT: do not delete the first line of this template
+%%It must be present to enable the BMC Submission system to
+%%recognise this template!!
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%%                                     %%
+%%  LaTeX template for BioMed Central  %%
+%%     journal article submissions     %%
+%%                                     %%
+%%          <8 June 2012>              %%
+%%                                     %%
+%%                                     %%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%%                                                                 %%
+%% For instructions on how to fill out this Tex template           %%
+%% document please refer to Readme.html and the instructions for   %%
+%% authors page on the biomed central website                      %%
+%% http://www.biomedcentral.com/info/authors/                      %%
+%%                                                                 %%
+%% Please do not use \input{...} to include other tex files.       %%
+%% Submit your LaTeX manuscript as one .tex document.              %%
+%%                                                                 %%
+%% All additional figures and files should be attached             %%
+%% separately and not embedded in the \TeX\ document itself.       %%
+%%                                                                 %%
+%% BioMed Central currently use the MikTex distribution of         %%
+%% TeX for Windows) of TeX and LaTeX.  This is available from      %%
+%% http://www.miktex.org                                           %%
+%%                                                                 %%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+%%% additional documentclass options:
+%  [doublespacing]
+%  [linenumbers]   - put the line numbers on margins
+
+%%% loading packages, author definitions
+
+%\documentclass[twocolumn]{bmcart}% uncomment this for twocolumn layout and comment line below
+\documentclass{bmcart}
+
+%%% Load packages
+%\usepackage{amsthm,amsmath}
+%\RequirePackage{natbib}
+%\RequirePackage[authoryear]{natbib}% uncomment this for author-year bibliography
+%\RequirePackage{hyperref}
+\usepackage[utf8]{inputenc} %unicode support
+%\usepackage[applemac]{inputenc} %applemac support if unicode package fails
+%\usepackage[latin1]{inputenc} %UNIX support if unicode package fails
+
+\usepackage{hyperref}
+\usepackage{breakurl}
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%%                                             %%
+%%  If you wish to display your graphics for   %%
+%%  your own use using includegraphic or       %%
+%%  includegraphics, then comment out the      %%
+%%  following two lines of code.               %%
+%%  NB: These line *must* be included when     %%
+%%  submitting to BMC.                         %%
+%%  All figure files must be submitted as      %%
+%%  separate graphics through the BMC          %%
+%%  submission process, not included in the    %%
+%%  submitted article.                         %%
+%%                                             %%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+
+\def\includegraphic{}
+\def\includegraphics{}
+
+
+
+%%% Put your definitions there:
+\startlocaldefs
+\endlocaldefs
+
+
+%%% Begin ...
+\begin{document}
+
+%%% Start of article front matter
+\begin{frontmatter}
+
+%\begin{fmbox}
+\dochead{Editorial}
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%%                                          %%
+%% Enter the title of your article here     %%
+%%                                          %%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\title{What is the Role of Cheminformatics in a Pandemic?}
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%%                                          %%
+%% Enter the authors here                   %%
+%%                                          %%
+%% Specify information, if available,       %%
+%% in the form:                             %%
+%%   <key>={<id1>,<id2>}                    %%
+%%   <key>=                                 %%
+%% Comment or delete the keys which are     %%
+%% not used. Repeat \author command as much %%
+%% as required.                             %%
+%%                                          %%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\author[
+   addressref={aff1},                   % id's of addresses, e.g. {aff1,aff2}
+   %corref={aff1},                       % id of corresponding address, if any
+   %noteref={n1},                        % id's of article notes, if any
+   email={rajarshi_guha@vrtx.com}   % email address
+]{\inits{RG}\fnm{Rajarshi} \snm{Guha} 0000-0001-7403-8819}
+\author[
+   addressref={aff2},                   % id's of addresses, e.g. {aff1,aff2}
+   %corref={aff1},                       % id of corresponding address, if any
+   %noteref={n1},                        % id's of article notes, if any
+   email={egon.willighagen@maastrichtuniversity.nl}   % email address
+]{\inits{EW}\fnm{Egon} \snm{Willighagen} 0000-0001-7542-0286}
+
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%%                                          %%
+%% Enter the authors' addresses here        %%
+%%                                          %%
+%% Repeat \address commands as much as      %%
+%% required.                                %%
+%%                                          %%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\address[id=aff1]{%                           % unique id
+  \orgname{Vertex Pharmaceuticals}, % university, etc
+  \street{50 Northern Ave},                     %
+  \postcode{02210}                                % post or zip code
+  \city{Boston, MA},                              % city
+  \cny{USA}                                    % country
+}
+
+\address[id=aff2]{%                           % unique id
+  \orgname{Maastricht university}, % university, etc
+  \street{Universiteitssingel 50},                     %
+  % \postcode{}                                % post or zip code
+  \city{6229 ER Maastricht},                              % city
+  \cny{Netherlands}                                    % country
+}
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%%                                          %%
+%% Enter short notes here                   %%
+%%                                          %%
+%% Short notes will be after addresses      %%
+%% on first page.                           %%
+%%                                          %%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\begin{artnotes}
+%\note{Sample of title note}     % note to the article
+%\note[id=n1]{Equal contributor} % note, connected to author
+\end{artnotes}
+
+%\end{fmbox}% comment this for two column layout
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%%                                          %%
+%% The Abstract begins here                 %%
+%%                                          %%
+%% Please refer to the Instructions for     %%
+%% authors on http://www.biomedcentral.com  %%
+%% and include the section headings         %%
+%% accordingly for your article type.       %%
+%%                                          %%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\begin{abstractbox}
+\begin{abstract} 
+\end{abstract}
+\begin{keyword}
+\end{keyword}
+\end{abstractbox}
+
+%
+%\end{fmbox}% uncomment this for twcolumn layout
+
+\end{frontmatter}
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%%                                          %%
+%% The Main Body begins here                %%
+%%                                          %%
+%% Please refer to the instructions for     %%
+%% authors on:                              %%
+%% http://www.biomedcentral.com/info/authors%%
+%% and include the section headings         %%
+%% accordingly for your article type.       %%
+%%                                          %%
+%% See the Results and Discussion section   %%
+%% for details on how to create sub-sections%%
+%%                                          %%
+%% use \cite{...} to cite references        %%
+%%  \cite{koon} and                         %%
+%%  \cite{oreg,khar,zvai,xjon,schn,pond}    %%
+%%  \nocite{smith,marg,hunn,advi,koha,mouse}%%
+%%                                          %%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+%%%%%%%%%%%%%%%%%%%%%%%%% start of article main body
+% <put your article body there>
+
+%%%%%%%%%%%%%%%%
+%% Background %%
+%%
+
+The COVID-19 pandemic has led to a spike in research output
+surrounding various aspects of the disease, ranging in scale from the
+molecular to the population level.  There has been a
+number of preprints in the field of cheminformatics that attempt to
+address questions surrounding the disease. For example, numerous
+virtual screening publications have proposed potentially interesting
+candidates. Indeed, Open Source and Open Data has lowered the cost of
+running cheminformatics experiments.
+
+During a recent conversation with our Editorial Board we discussed the
+possibility of a thematic issue in the
+[Journal of Cheminformatics](https://jcheminf.biomedcentral.com/) on
+COVID-19. We decided not to pursue such an effort, mainly since much of
+the work that might be topical for the journal was focused on applying
+pre-existing pipelines to prioritize compounds as potential
+candidates. As noted earlier, we have decided that other
+venues would be more suitable to applications of such standard
+pipelines, In addition, given the urgency of the situation we felt that
+computational predictions without some form of experimental
+verification would not be very useful.
+
+\section*{How does cheminformatics contribute to virus research}
+
+Even though we have decided to not focus on COVID-19 publications, we
+believe that it is important to consider how cheminformatics can 
+contribute to studies of pandemic diseases. We
+highlight some features of the field that will enable researchers to
+make use of chemical information in an efficient and rapid manner to
+address future diseases.
+
+
+Scientifically, there are numerous areas where cheminformatics plays a
+role in anti-viral research, such as in virtual screening and
+optimizing chemical structures. While we won't assume that a given
+topical area will be more or less relevant for future research, we
+believe that principles and processes (and their associated
+infrastructure) within the cheminformaticscommunity  can enable rapid and robust 
+research when the need arises.
+
+\subsection*{Better prepared with more open cheminformatics}
+
+While it is evident that Open Science and Open Data have enabled a
+plethora of studies on various aspects of COVID-19, ensuring that
+future efforts can build on current research will require broad
+acceptance (and adherence) to community standards. This requires clear
+articulation of the relevant standards (e.g., file formats) as well as
+best practices. It is not much use if standards are defined, yet
+researchers do not employ them. In our view, funders and journals can
+play a critical role in ensuring that standards and best practices are
+adhered to.
+
+\subsection*{Annotated literature}
+
+While not really a standard, the chemical literature can benefit from
+annotation. The most obvious first step is to ensure that are
+molecules referred to in a manuscript is associated with a SMILES or
+InChI string. Ideally, structure files in some standard format would
+also be included. While it may be onerous to as authors to annotate
+non-chemical terms using formal vocabularies, this could be a service
+provided by publishers. A combination of chemical identifiers plus
+publisher-generated annotations would be a powerful way to enhance
+reuse of published work.
+
+\subsection*{Emergency Access}
+
+Many publishers removed the paywalls to their COVID19-related content. We stress this is
+not Open Science and at best *emergency Open Access*. However, collected in the CORD-19 data set,
+the papers are available for text and data mining [<cite>Q93445532</cite>] which can still benefit
+population of open science resources [REFS]. However, scholars may loose access to the literature
+after the paywalls are put up again, making it hard to study the details behind the knowledge they
+find in databases.
+
+
+\subsection*{Interoperability}
+
+
+
+\subsection*{Infrastructure}
+
+Along with FAIR data, infrastructure that enables researchers to use
+cheminformatics methods and toolkits, and then deploy solutions in a
+straightforward fashion can enable reuse and thereby encourage
+application and replication within the community. To a large degree,
+Open Source toolkits have democratized access to cheminformatics
+methods, and platforms such as KNIME enable easy deployment of
+solutions. Resources such as Github and Bitbucket are also critical
+infrastructure that enable the community to access, modify and
+contribute to published code. We note that the infrastructure
+described here should also apply to data. While version control
+platforms may not be suitable for large datasets, resources such as
+Figshare and Zenodo are capable to handling datasets and their
+associated metadata.
+
+
+\subsection*{New avenues for dissemination}
+
+A final question that should be asked, is the journal article even the
+right platform to share knowledge during a pandemic. While peer review
+is important, it is not a guarantee of reliability. Indeed, several
+COVID-19 articles have been retracted shortly after they were published
+[REFS]. While it is unlikely that peer review will be replaced,
+mechanisms to support curation and usage tracking will enhance
+rapid publication processes.
+
+Another aspect, relevant to rapid publication needs is that journal
+articles suffer from the "version of record" limitation: once
+published, making corrections is hard, though corrigenda and
+errata are possible, they are rare. Efforts such as the Live Journal
+of Computational Molecular Science (LiveCoMS) [REF], which support the
+publication of "live" reviews (i.e., review articles that are updated
+on an ongoing basis) highlight how published articles can undergo
+continuous revision.
+
+
+\section*{Conclusion}
+
+
+
+\begin{backmatter}
+
+\section*{Competing interests}
+  The authors declare that they have no competing interests.
+
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%%                  The Bibliography                       %%
+%%                                                         %%
+%%  Bmc_mathpys.bst  will be used to                       %%
+%%  create a .BBL file for submission.                     %%
+%%  After submission of the .TEX file,                     %%
+%%  you will be prompted to submit your .BBL file.         %%
+%%                                                         %%
+%%                                                         %%
+%%  Note that the displayed Bibliography will not          %%
+%%  necessarily be rendered by Latex exactly as specified  %%
+%%  in the online Instructions for Authors.                %%
+%%                                                         %%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+% if your bibliography is in bibtex format, use those commands:
+\bibliographystyle{bmc-mathphys} % Style BST file (bmc-mathphys, vancouver, spbasic).
+\bibliography{bmc_article}      % Bibliography file (usually '*.bib' )
+% for author-year bibliography (bmc-mathphys or spbasic)
+% a) write to bib file (bmc-mathphys only)
+% @settings{label, options="nameyear"}
+% b) uncomment next line
+%\nocite{label}
+
+% or include bibliography directly:
+% \begin{thebibliography}
+% \bibitem{b1}
+% \end{thebibliography}
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%%                               %%
+%% Figures                       %%
+%%                               %%
+%% NB: this is for captions and  %%
+%% Titles. All graphics must be  %%
+%% submitted separately and NOT  %%
+%% included in the Tex document  %%
+%%                               %%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+
+
+
+
+\end{backmatter}
+\end{document}

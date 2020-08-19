@@ -1,15 +1,13 @@
-SOURCES := editorial.i.md
-TARGETS := editorial.md
+all: bmc_article.pdf
 
-all: editorial.md
+bmc_article.pdf: bmc_article.bbl bmc_article.tex 
+	pdflatex bmc_article
+	pdflatex bmc_article
+	@grep -i warn *.log
 
-references.qids: findCitations.groovy
-	@echo "Finding the citations"
-	@groovy findCitations.groovy . | grep "^Q" | sort | uniq > references.qids
+bmc_article.bbl: bmc_article.tex bmc_article.bib
+	pdflatex bmc_article
+	bibtex bmc_article
 
-references.dat: references.qids references.js
-	@nodejs references.js
-
-%.md : %.i.md createMarkdown.groovy references.dat
-	@echo "Creating $@ ... "
-	@groovy createMarkdown.groovy $< > $@
+clean:
+	\rm -f *.aux *.blg *.log bmc_article.pdf *.bbl

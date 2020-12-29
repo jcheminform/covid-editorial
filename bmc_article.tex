@@ -58,6 +58,9 @@
 \usepackage{hyperref}
 \usepackage{breakurl}
 
+\usepackage{lineno}
+\linenumbers
+
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 %%                                             %%
@@ -128,6 +131,18 @@
    %noteref={n1},                        % id's of article notes, if any
    email={egon.willighagen@maastrichtuniversity.nl}   % email address
 ]{\inits{EW}\fnm{Egon} \snm{Willighagen} 0000-0001-7542-0286}
+\author[
+   addressref={aff3},                   % id's of addresses, e.g. {aff1,aff2}
+   %corref={aff1},                       % id of corresponding address, if any
+   %noteref={n1},                        % id's of article notes, if any
+   email={barbara.zdrazil@univie.ac.at}   % email address
+]{\inits{BZ}\fnm{Barbara} \snm{Zdrazil} 0000-0001-9395-1515}
+\author[
+   addressref={aff4},                   % id's of addresses, e.g. {aff1,aff2}
+   %corref={aff1},                       % id of corresponding address, if any
+   %noteref={n1},                        % id's of article notes, if any
+   email={jeliazkova.nina@gmail.com}   % email address
+]{\inits{NJ}\fnm{Nina} \snm{Jeliazkova} 0000-0002-4322-6179}
 
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
@@ -154,6 +169,23 @@
   \city{6229 ER Maastricht},                              % city
   \cny{Netherlands}                                    % country
 }
+
+\address[id=aff3]{%                           % unique id
+  \orgname{University of Vienna}, % university, etc
+  \street{Althanstraße 14},                     %
+  % \postcode{}                                % post or zip code
+  \city{1090 Vienna},                              % city
+  \cny{Austria}                                    % country
+}
+
+\address[id=aff4]{%                           % unique id
+  \orgname{Ideaconsult Ltd,}, % university, etc
+ %  \street{Althanstraße 14},                     %
+  % \postcode{}                                % post or zip code
+  \city{Sofia, 1000}, 
+  \cny{Bulgaria}                                    % country
+}
+
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 %%                                          %%
@@ -268,7 +300,7 @@
 
 The COVID-19 pandemic has led to a spike in research output
 surrounding various aspects of the disease, ranging in scale from the
-molecular to the population level.  There has been a number of
+molecular to the population level.  There have been a number of
 preprints in the field of cheminformatics that attempt to address
 questions surrounding the disease. For example, numerous virtual
 screening publications have proposed potentially interesting
@@ -276,77 +308,57 @@ candidates.
 
 During a recent conversation with our Editorial Board we discussed the
 possibility of a thematic issue in the Journal of Cheminformatics on
-COVID-19. This editorial focuses on providing a more detailed
-description behind this decision, as well as some thoughts on how
-computational research should be evaluated when submitted to
-non-computational venues.
+COVID-19. We concluded that we would not pursue such an issue and this
+editorial focuses on providing a more detailed description behind this
+decision.
 
-\section*{Cheminformatics as a catalyst for anti-viral research}
+\section*{Computing results is necessary, but not sufficient}
 
 The urgency of the COVID-19 epidemic presents a number of challenges
-for the computational research community. While control and mitigaton of viral
-spread is a primary focus of health systems, this is closely tied to
-identifying pre-existing or novel therapeutic approaches to treat the
-disease itself.
+for the computational research community. While control and mitigaton
+of viral spread is a primary focus of health systems, this is closely
+tied to identifying pre-existing or novel therapeutic approaches to
+treat the disease itself.
 
-Cheminformatics approaches are one of the tools in the computational
+Cheminformatics approaches are one set of tools in the computational
 toolbox that can be applied to therapeutic discovery. Given the
 availability of Open Source and commercial tools, coupled with public
-data, we have seen a large number of applications that have
-prioritized compounds as potential therapeutic candidates. From the
-point of view of this journal, straightforward applications of
-pre-existing or well known pipelines are out scope for research
-articles \cite{jcheminf_scope}.
+data, we have seen many studies that have prioritized compounds as
+potential therapeutic candidates. From the point of view of this
+journal, straightforward applications of pre-existing or well known
+pipelines are out scope for research articles \cite{jcheminf_scope}.
 
 However, one might argue that in such a crisis situation,
 dissemination of all such applications could be beneficial. Indeed,
-while more knowledge is useful in
-the current pandemic, we believe that it needs to be rigorous
-knowledge. A particularly egrigeous example are applications of drug
-repurposing pipelines. Given the current state of the art it is very
-easy to propose lists of approved or investigational drugs that could
-serve as a COVID-19 therapeutic. While it is possible to make
-justifications for some of these based on prior knowledge of mode of
-action, it is still the fact that these are hypotheses. In our opinion,
-the urgency of the current pandemic requires us to validate our
-predictions with experimental results, and we can no longer carry on
-(computational) business as usual.
+while more knowledge is useful in the current pandemic, we believe
+that it needs to be rigorous knowledge. A particularly egrigeous
+example are applications of drug repurposing pipelines. Given the
+current state of the art it is very easy to propose lists of approved
+or investigational drugs that could serve as a COVID-19
+therapeutic. While it is possible to make justifications for some of
+these based on prior knowledge of mode of action, it is still remains
+that these are \emph{hypotheses}. In our opinion, the urgency of the
+current pandemic requires us to validate our predictions with
+experimental results, and we can no longer carry on (computational)
+business as usual.
 
 While testable hypotheses are a key requirement in the current
 setting, it is equally important that the pipeline used to reach such
 hypotheses be as rigorous as possible. For statistical and machine
-learning based approaches, appropriate statistical practice should be
-employed \cite{cc_stats_1,cc_stats_2, cc_stats_3}. Similarly, best
-practices should be employed for ligand-based \cite{qsar_1, qsar_2}
-and structure-based approaches \cite{sbdd_1, sbdd_2}.
-
-\subsection*{Cheminformatics in action}
-\label{sec:chem-acti}
-
-It is important to note that there are examples of work that
-exemplifying collaboration between experimental and computational
-groups tackling various aspects of COVID-19. We highlight two of them,
-namely the COVID Moonshot \cite{moonshot} and the COVID-19 Molecular
-Structure and Therapeutics Hub \cite{molssi}]. The COVID Moonshot
-focuses on finding inhibitors of the Main protease of Covid19, and
-involves 300 participants with a core group of 20 people. Importantly,
-the project has access to computational, synthetic and bioassay
-resources, coupled to a synchrotron that produces multiple structures
-each week. The project has been able to identify starting points
-exhibiting nanomolar potencies. While the project employs well known
-computational methodologies, they key element is that computational
-results are part of the design-make-test cycle. In other words,
-computation is not isolated. Nonethless, the project makes use of key
-Open Source products such as Fragalysis (a cloud-based application to
-progress hits in fragment based drug design projects).
+learning based approaches, appropriate statistical methodology should
+be employed \cite{cc_stats_1,cc_stats_2, cc_stats_3}. Similarly, best
+practices should be followed for ligand-based \cite{qsar_1, qsar_2}
+and structure-based approaches \cite{sbdd_1, sbdd_2}. These aspects
+become even more important, when computational work with experimental
+components are submitted to non-computational journals.
 
 
-\subsection*{Open is necessary, but not sufficient}
+\section*{Open is a starting point}
 
 While it is evident that Open Science and Open Data have enabled a
 plethora of studies on various aspects of COVID-19, it is also true
 that just making code and data available does not necessarily lead to
-uptake. Why is this the case?  But it is important to remember that
+uptake. It is important to remember that
 even when data and methods are shared openly, they may not actually be
 effective. This can be the case when a method is still in development
 or has only been validated in a few specific systems. Similarly, data
@@ -358,25 +370,53 @@ scenario, methodology development takes a back seat to data
 publication, and ensuring that the relevant data is made available and
 findable efficiently is a key task.
 
+\section*{Cheminformatics in action}
+\label{sec:chem-acti}
+
+It is important to note that there are examples of work that exemplify
+computational-experimental collaboration and the community response to
+the plethora of computational studies \& data. We highlight two of
+them, namely the COVID Moonshot \cite{moonshot} and the COVID-19
+Molecular Structure and Therapeutics Hub \cite{molssi}. The COVID
+Moonshot focuses on finding inhibitors of the Main protease of
+COVID-19, and involves 300 participants with a core group of 20
+people. Importantly, the project has access to computational,
+synthetic and bioassay resources, coupled to a synchrotron that
+produces multiple structures each week. The project has been able to
+identify starting points exhibiting nanomolar potencies. While the
+project employs well known computational methodologies, they key
+element is that computational results are part of the design-make-test
+cycle. In other words, computation is not isolated. Nonethless, the
+project makes use of key Open Source products such as Fragalysis (a
+cloud-based application to progress hits in fragment based drug design
+projects). The Hub on the other hand is an example of a resource that
+aggregates data of various types that can be used for computational
+studies. This includes structure models, simulation related datasets
+(e.g., configuration files, trajectories) . While this does not
+directly lead to tested small molecules, it represents an invaluable
+coordinated resource covering the wide variety of computational
+studies that are being published.
+
 
 \section*{Conclusion}
 
 It is clear that the computational chemistry and cheminformatics
 community are actively engaged in COVID-19 research and the rapid
-appearance of computational research on COVID-19 attests to the value
-of Open Source, Open Data and Open Science in general. However, given
-the scope of the journal, and the desire to encourage rigorous
-cheminformatics studes, we have decided not to focus on COVID-19
-related research submissions that are purely computational, with no
-link to experimental validation. This does not preclude research that
-addresses novel cheminformatics approaches and results, in the context
-of COVID-19. We hope that cheminformatics researchers will consider
-the role of chemical information, methods and standards in the context
-of anti-viral research, and look forward to such submissions. But
-given the urgency of the current situation, and the need to focus
-resources on actionable outcomes, we have decided to not consider
-applications of well known computational pipelines that simply result
-in lists of putative inhibitors of a SARS-CoV-2 enzyme.
+appearance of computational research \cite{jcim_covid_editorial} on
+COVID-19 attests to the value of Open Source, Open Data and Open
+Science in general. However, given the scope of this journal, and the
+desire to encourage rigorous cheminformatics studes, we have decided
+not to focus on COVID-19 related research submissions that are purely
+computational, with no link to experimental validation. This does not
+preclude research that addresses novel cheminformatics approaches and
+results, in the context of COVID-19. We hope that cheminformatics
+researchers will consider the role of chemical information, methods
+and standards in the context of anti-viral research, and look forward
+to such submissions. But given the urgency of the current situation,
+and the need to focus resources on actionable outcomes, we have
+decided to not consider applications of well known computational
+pipelines that simply result in lists of putative inhibitors of a
+SARS-CoV-2 enzyme.
 
 
 

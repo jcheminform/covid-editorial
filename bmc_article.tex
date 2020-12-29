@@ -57,6 +57,8 @@
 
 \usepackage{hyperref}
 \usepackage{breakurl}
+
+
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 %%                                             %%
 %%  If you wish to display your graphics for   %%
@@ -227,48 +229,26 @@
 % In my opinion, a chance to invoke the Anna Kerenina principle is a
 % terrible thing to waste. :-)
 
-% There is no doubt that the community of researchers that develops
-% and/or uses cheminformatics tools in response to pandemics is quite
-% large and engaged and so cheminformatics journals should reflect on
-% this. Yet, the absolute majority of these papers as you said use
-% out-of-the box tools, often in a very superficial manner, and produce
-% hits that have little value even before testing.
-
 % IMHO, most critical issues relate to what you touched on in the
 % introductory paragraph, ie, expert use of cheminformatics approaches,
 % strong linkage between computational predictions and experimental
 % validation, and overall, rigor of cheminformatics-enabled testable
-% hypothesis generation. I’d propose that addressing the issues of
+% hypothesis generation.
+
+% I’d propose that addressing the issues of
 % rigor, reproducibility, and practical impact of cheminformatics on
 % pandemic research in an editorial with the title you proposed is much
-% more to the point than the issues you highlighted. It would be useful
+% more to the point than the issues you highlighted.
+
+% It would be useful
 % for instance to offer rigorous guidance as to how computational papers
 % should be evaluated when they are submitted to non-computational
 % journals.
 
  
 
-% In brief, I suggest we contemplate a different template for this
-% editorial, with subtitles that are highly specific to the issue at
-% hand; and save the currently proposed content for another editorial on
-% open science, data sharing, and open publications.
-
 % Cheminformatics in action
 
-% Covid moonshot probably the largest open source discovery project at
-% present is the Covid Moonshot project to find inhibitors of the Main
-% protease of Covid19. This involves about 300 participants with a
-% core group of about 20, vast computational resources and synthesis
-% and amazingly, a synchrotron producing scores of structures each
-% week, combined with numerous ant-viral test facillities up to in
-% vivo modes. So far, we have starting points (warheads) around 500nM.
-% Please see 
-% https://fragalysis.diamond.ac.uk/viewer/react/preview/target/Mpro
-
-% https://www.nature.com/articles/s41557-020-0496-2
-
-% https://postera.ai/covid
-% JEDI
 
 % if the computational studies aren't good enough, why? What would be
 % needed, what would this take, and how long (think eg the debates on
@@ -281,12 +261,6 @@
 %  we need small molecule, untargeted mass spec when there's other, very
 %  reliable tests out there
 
-% - you can make information open, like PubChem did, you can make an
-% open script to use it, like I did, you can offer to help colleagues
-% with data analysis, like I did, and the uptake is small. why? People
-% use what they are used to in a crisis, some of our methods are not yet
-% ready to go. It's a useful lesson for open science. open alone is not
-% everything.
 
 %%%%%%%%%%%%%%%%
 %% Background %%
@@ -322,7 +296,7 @@ data, we have seen a large number of applications that have
 prioritized compounds as potential therapeutic candidates. From the
 point of view of this journal, straightforward applications of
 pre-existing or well known pipelines are out scope for research
-articles [REF].
+articles \cite{jcheminf_scope}.
 
 However, one might argue that in such a crisis situation,
 dissemination of all such applications could be beneficial. Indeed,
@@ -341,63 +315,50 @@ predictions with experimental results, and we can no longer carry on
 While testable hypotheses are a key requirement in the current
 setting, it is equally important that the pipeline used to reach such
 hypotheses be as rigorous as possible. For machine learning based
-approaches, proper statistical practice should be employed [REF]. For
+approaches, proper statistical practice should be employed
+\cite{cc_stats_1,cc_stats_2, cc_stats_3}. For
 structure based approaches XXXX.
 
 \subsection*{Cheminformatics in action}
 \label{sec:chem-acti}
 
 It is important to note that there are examples of work that
-exemplifying collaboration between experimental and computational groups
-tackling various aspects of COVID-19. We highlight two of them, namely
-the COVID Moonshot [REF
-https://www.nature.com/articles/s41557-020-0496-2] and the COVID-19
-Molecular Structure and Therapeutics Hub [REF
-https://github.com/MolSSI/covid]. The COVID Moonshot focuses on
-finding inhibitors of the Main protease of Covid19, and involves 300
-participants with a core group of 20 people. Importantly, the project
-has access to computational, synthetic and bioassay resources, coupled
-to a synchrotron that produces multiple structures each week. The
-project has been able to identify starting points exhibiting
-nanomolar potencies. While the project employs well known
-computational methodologies, they key element is that
-computational results are part of the design-make-test
-cycle. In other words, computation is not isolated. Nonethless, the
-project makes use of key Open Source products such as Fragalysis (a
-cloud-based application to progress hits in fragment based drug design
-projects).
+exemplifying collaboration between experimental and computational
+groups tackling various aspects of COVID-19. We highlight two of them,
+namely the COVID Moonshot \cite{moonshot} and the COVID-19 Molecular
+Structure and Therapeutics Hub \cite{molssi}]. The COVID Moonshot
+focuses on finding inhibitors of the Main protease of Covid19, and
+involves 300 participants with a core group of 20 people. Importantly,
+the project has access to computational, synthetic and bioassay
+resources, coupled to a synchrotron that produces multiple structures
+each week. The project has been able to identify starting points
+exhibiting nanomolar potencies. While the project employs well known
+computational methodologies, they key element is that computational
+results are part of the design-make-test cycle. In other words,
+computation is not isolated. Nonethless, the project makes use of key
+Open Source products such as Fragalysis (a cloud-based application to
+progress hits in fragment based drug design projects).
 
 
 \subsection*{Open is necessary, but not sufficient}
 
 While it is evident that Open Science and Open Data have enabled a
-plethora of studies on various aspects of COVID-19, ensuring that
-future efforts can build on current research will require broad
-acceptance (and adherence) to community standards. This requires clear
-articulation of the relevant standards (e.g., file formats) as well as
-best practices. It is not much use if standards are defined, yet
-researchers do not employ them. In our view, funders and journals can
-play a critical role in ensuring that standards and best practices are
-adhered to [REF https://pubs.acs.org/doi/10.1021/acs.jcim.0c00319].
-
-But it is also true that just making code and data available does not
-necessarily lead to uptake. Why is this the case? 
-But it is important to remember that even when data and methods are
-shared openly, they may not actually be effective. This can be the
-case when a method is still in development or has only been validated
-in a few specific systems. Similarly, data may be preliminary and or
-generated in a very specific system. The point is that in crisis
-situation, such as the COVID-19 pandemic, researchers will tend to
-stick to what they know, but more importantly, what they know
-works. One could argue that in such a scenario, methodology
-development takes a back seat to data publication, and ensuring that
-the relevant data is made available and findable efficiently is a key
-task.
+plethora of studies on various aspects of COVID-19, it is also true
+that just making code and data available does not necessarily lead to
+uptake. Why is this the case?  But it is important to remember that
+even when data and methods are shared openly, they may not actually be
+effective. This can be the case when a method is still in development
+or has only been validated in a few specific systems. Similarly, data
+may be preliminary and or generated in a very specific system. The
+point is that in crisis situation, such as the COVID-19 pandemic,
+researchers will tend to stick to what they know, but more
+importantly, what they know works. One could argue that in such a
+scenario, methodology development takes a back seat to data
+publication, and ensuring that the relevant data is made available and
+findable efficiently is a key task.
 
 
-
-
-\Section*{Conclusion}
+\section*{Conclusion}
 
 It is clear that the computational chemistry and cheminformatics
 community are actively engaged in COVID-19 research and the rapid
@@ -415,6 +376,8 @@ given the urgency of the current situation, and the need to focus
 resources on actionable outcomes, we have decided to not consider
 applications of well known computational pipelines that simply result
 in lists of putative inhibitors of a SARS-CoV-2 enzyme.
+
+
 
 \begin{backmatter}
 

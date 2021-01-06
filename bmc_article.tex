@@ -145,15 +145,6 @@
 ]{\inits{NJ}\fnm{Nina} \snm{Jeliazkova} 0000-0002-4322-6179}
 
 
-%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-%%                                          %%
-%% Enter the authors' addresses here        %%
-%%                                          %%
-%% Repeat \address commands as much as      %%
-%% required.                                %%
-%%                                          %%
-%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-
 \address[id=aff1]{%                           % unique id
   \orgname{Vertex Pharmaceuticals}, % university, etc
   \street{50 Northern Ave},                     %
@@ -187,14 +178,6 @@
 }
 
 
-%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-%%                                          %%
-%% Enter short notes here                   %%
-%%                                          %%
-%% Short notes will be after addresses      %%
-%% on first page.                           %%
-%%                                          %%
-%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 
 \begin{artnotes}
 %\note{Sample of title note}     % note to the article
@@ -203,21 +186,11 @@
 
 %\end{fmbox}% comment this for two column layout
 
-%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-%%                                          %%
-%% The Abstract begins here                 %%
-%%                                          %%
-%% Please refer to the Instructions for     %%
-%% authors on http://www.biomedcentral.com  %%
-%% and include the section headings         %%
-%% accordingly for your article type.       %%
-%%                                          %%
-%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-
 \begin{abstractbox}
 \begin{abstract} 
 \end{abstract}
 \begin{keyword}
+  cheminformatics, COVID-19, virtual screening, pandemic
 \end{keyword}
 \end{abstractbox}
 
@@ -226,85 +199,15 @@
 
 \end{frontmatter}
 
-%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-%%                                          %%
-%% The Main Body begins here                %%
-%%                                          %%
-%% Please refer to the instructions for     %%
-%% authors on:                              %%
-%% http://www.biomedcentral.com/info/authors%%
-%% and include the section headings         %%
-%% accordingly for your article type.       %%
-%%                                          %%
-%% See the Results and Discussion section   %%
-%% for details on how to create sub-sections%%
-%%                                          %%
-%% use \cite{...} to cite references        %%
-%%  \cite{koon} and                         %%
-%%  \cite{oreg,khar,zvai,xjon,schn,pond}    %%
-%%  \nocite{smith,marg,hunn,advi,koha,mouse}%%
-%%                                          %%
-%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-
-%%%%%%%%%%%%%%%%%%%%%%%%% start of article main body
-% <put your article body there>
-
-
-%% Points
-
-% It might be an occasion to underscore the point that in vitro and ex
-% vivo (cell-based) assays are themselves models, and that a signal virtue
-% of checking predictions of different models is that each ones correct
-% predictions are alike but that each one's errors are typically wrong in
-% their own way.
-
-% In my opinion, a chance to invoke the Anna Kerenina principle is a
-% terrible thing to waste. :-)
-
-% IMHO, most critical issues relate to what you touched on in the
-% introductory paragraph, ie, expert use of cheminformatics approaches,
-% strong linkage between computational predictions and experimental
-% validation, and overall, rigor of cheminformatics-enabled testable
-% hypothesis generation.
-
-% I’d propose that addressing the issues of
-% rigor, reproducibility, and practical impact of cheminformatics on
-% pandemic research in an editorial with the title you proposed is much
-% more to the point than the issues you highlighted.
-
-% It would be useful
-% for instance to offer rigorous guidance as to how computational papers
-% should be evaluated when they are submitted to non-computational
-% journals.
-
- 
-
-% Cheminformatics in action
-
-
-% if the computational studies aren't good enough, why? What would be
-% needed, what would this take, and how long (think eg the debates on
-% how long the vaccine development should take). It's not clear to me,
-% although I do cheminformatics, I do totally different things and would
-% have no clue how to judge these drug discovery efforts
-
-%  - tendency to heroism: everyone wants to bend their research to
-%  covid, but is this always appropriate / wise / necessary? Why would
-%  we need small molecule, untargeted mass spec when there's other, very
-%  reliable tests out there
-
-
-%%%%%%%%%%%%%%%%
-%% Background %%
-%%
 
 The COVID-19 pandemic has led to a spike in research output
-surrounding various aspects of the disease, ranging in scale from the
-molecular to the population level.  There have been a number of
-preprints (and subsequent journal publications) in the field of
-cheminformatics that attempt to address questions surrounding the
+\cite{covidlit} surrounding various aspects of the disease, ranging in
+scale from the molecular to the population level.  There have been a
+number of preprints (and subsequent journal publications) in the field
+of cheminformatics that attempt to address questions surrounding the
 disease. For example, numerous virtual screening publications have
-proposed potentially interesting candidates.
+proposed potentially interesting candidates (for an overview see
+this Scholia page \cite{scholia}).
 
 During a recent conversation with our Editorial Board we discussed the
 possibility of a thematic issue in the Journal of Cheminformatics on
@@ -362,7 +265,9 @@ method development may not be well suited to the current scenario. On
 the other hand, data being generated, either experimentally or
 computationally can serve as a foundation for computational
 studies. This is enabled by ensuring such data is made available in an
-Open fashion and following FAIR principles \cite{fair-1, fair-2}. Yet, it is important to
+Open fashion and following FAIR principles \cite{fair-1, fair-2}. For
+example, see the COVID-19 Wikiproject \cite{wikidata} that aims to
+make drug discovery related data FAIR. Yet, it is important to
 remember that even when data and methods are shared openly, they may
 not actually be effective, as in a crisis situation, such as the
 COVID-19 pandemic, researchers will tend to stick to what they know,

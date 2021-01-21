@@ -58,40 +58,16 @@
 \usepackage{hyperref}
 \usepackage{breakurl}
 
-\usepackage{lineno}
-\linenumbers
-
-
-%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-%%                                             %%
-%%  If you wish to display your graphics for   %%
-%%  your own use using includegraphic or       %%
-%%  includegraphics, then comment out the      %%
-%%  following two lines of code.               %%
-%%  NB: These line *must* be included when     %%
-%%  submitting to BMC.                         %%
-%%  All figure files must be submitted as      %%
-%%  separate graphics through the BMC          %%
-%%  submission process, not included in the    %%
-%%  submitted article.                         %%
-%%                                             %%
-%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%\usepackage{lineno}
+%\linenumbers
 
 
 \def\includegraphic{}
 \def\includegraphics{}
 
 
-
-%%% Put your definitions there:
-\startlocaldefs
-\endlocaldefs
-
-
 %%% Begin ...
 \begin{document}
-
-%%% Start of article front matter
 \begin{frontmatter}
 
 %\begin{fmbox}
@@ -180,27 +156,29 @@
 
 
 \begin{artnotes}
-%\note{Sample of title note}     % note to the article
-%\note[id=n1]{Equal contributor} % note, connected to author
 \end{artnotes}
 
 %\end{fmbox}% comment this for two column layout
 
+
 \begin{abstractbox}
   \begin{abstract}
     The COVID-19 pandemic has led to a spike in research output
-    \cite{covidlit} surrounding various aspects of the disease,
-    ranging in scale from the molecular to the population level.
-    There have been a number of preprints (and subsequent journal
+    \cite{covidlit, covidlit-2} surrounding all aspects of the
+    disease, ranging in scale from the molecular to the population
+    level.  There have been many preprints (and subsequent journal
     publications) in the field of cheminformatics that attempt to
-    address questions surrounding the disease. For example, numerous
-    virtual screening publications have proposed potentially
-    interesting candidates (for an overview see this Scholia page
-    \cite{scholia}). During a recent conversation with our Editorial
-    Board we discussed the possibility of a thematic issue in the
-    Journal of Cheminformatics on COVID-19. We concluded that we would
-    not pursue such an issue and this editorial focuses on providing a
-    more detailed description behind this decision.
+    address the discovery of therapeutics against the disease. For
+    example, numerous virtual screening publications have proposed
+    potentially interesting candidates (for an overview see this
+    Scholia page \cite{scholia}). During a recent conversation with
+    our Editorial Board we discussed the possibility of a thematic
+    issue in the Journal of Cheminformatics on COVID-19. We have
+    decided instead to maintain our focus on novel cheminformatics and
+    reiterate the requirement that studies proposing compounds as
+    putative prophylactics or therapeutics be backed up by
+    experimental validation, irrespective of whether the target is
+    COVID-19 or some other disease.
 
 \end{abstract}
 \begin{keyword}
@@ -215,13 +193,14 @@
 
 
 
-\section*{Computing results is necessary, but not sufficient}
+\section*{Computation is necessary, but not sufficient}
 
 The urgency of the COVID-19 epidemic presents a number of challenges
-for the computational research community. While control and mitigation
-of viral spread is a primary focus of health systems, this is closely
-tied to identifying pre-existing or novel therapeutic approaches to
-treat the disease itself. 
+for the computational chemistry and informatics research
+community. While control and mitigation of viral spread is a primary
+focus of health systems, this is closely tied to identifying
+pre-existing or novel therapeutic approaches to treat the disease
+itself.
 
 Cheminformatics approaches are one set of tools in the computational
 toolbox that can be applied to therapeutic discovery. Given the
@@ -237,13 +216,12 @@ while more knowledge is useful in the current pandemic, we believe
 that it needs to be rigorous knowledge. A particularly egrigeous
 example is applications of drug repurposing pipelines. Given the
 current state of the art it is very easy to propose lists of approved
-or investigational drugs, that could serve as COVID-19
+or investigational drugs, that \emph{could} serve as COVID-19
 therapeutics. While it is possible to make justifications for some of
 these based on prior knowledge of mode of action, it still remains
 that these are \emph{hypotheses}. In our opinion, the urgency of the
-current pandemic requires us to validate our predictions with
-experimental results, and we can no longer carry on (computational)
-business as usual.
+current pandemic requires that predictions be validated by experiment,
+and we can no longer carry on (computational) business as usual.
 
 While testable hypotheses are a key requirement in the current
 setting, it is equally important that the pipeline used to reach such
@@ -281,28 +259,38 @@ data is made available and findable efficiently is a key task.
 
 It is important to note that there are examples of work that exemplify
 computational-experimental collaboration and the community response to
-the plethora of computational studies and data. We highlight two of
-them, namely the COVID Moonshot \cite{moonshot} and the COVID-19
-Molecular Structure and Therapeutics Hub \cite{molssi}. The COVID
-Moonshot focuses on finding inhibitors of the Main protease (Mpro) of
-COVID-19, and involves 300 participants with a core group of 20
-people. Importantly, the project has access to computational,
-synthetic and bioassay resources, coupled to a synchrotron that
-produces multiple structures each week. The project has been able to
-identify Mpro binders exhibiting nanomolar potencies. While the
-project employs well-known computational methodologies, the key
-element is that computational results are part of the design-make-test
-cycle. In other words, computation is not isolated. Nonetheless, the
-project makes use of key Open Source products such as Fragalysis (a
-cloud-based application to progress hits in fragment-based drug design
-projects) \cite{fragalysis}. The Hub, on the other hand, is an example
-of a resource that aggregates data of various types that can be used
-for computational studies. This includes structure models, simulation
-related datasets (e.g., configuration files, trajectories). While this
-does not directly lead to tested small molecules, it represents an
-invaluable coordinated resource covering the wide variety of
-computational studies that being published.
+disseminating the plethora of computational studies and their data. We
+highlight two of them, namely the COVID Moonshot \cite{moonshot} and
+the COVID-19 Molecular Structure and Therapeutics Hub
+\cite{molssi}. The COVID Moonshot focuses on finding inhibitors of the
+Main protease (Mpro) of COVID-19, and involves 300 participants with a
+core group of 20 people. Importantly, the project has access to
+computational, synthetic and bioassay resources, coupled to a
+synchrotron that produces multiple structures each week. The project
+has been able to identify Mpro binders exhibiting nanomolar
+potencies. While the project employs well-known computational
+methodologies, the key element is that computational results are part
+of the design-make-test cycle. In other words, computation is not
+isolated. Nonetheless, the project makes use of key Open Source
+products such as Fragalysis (a cloud-based application to progress
+hits in fragment-based drug design projects) \cite{fragalysis}. The
+Hub, on the other hand, is an example of a resource that aggregates
+data of various types that can be used for computational studies. This
+includes structure models, simulation related datasets (e.g.,
+configuration files, trajectories). While this does not directly lead
+to tested small molecules, it represents an invaluable coordinated
+resource covering the wide variety of computational studies that are
+being published.
 
+Given that rapid dissemination via preprints and resources such as the
+Hub are more appropriate for the immediate response required in the
+current setting, it is reasonable to ask how effective these resources
+are in covering the research landscape and driving COVID-19 research
+in the computational chemistry domain. Such an evaluation is probably
+better suited for a more in-depth study, but we note that
+efforts such as the COVID Moonshot and the Hub now involve
+contributions from at least 15 industrial and academic groups from across
+the world.
 
 \section*{Conclusion}
 
@@ -312,31 +300,39 @@ appearance of computational research \cite{jcim_covid_editorial} on
 COVID-19 attests to the value of Open Data, Open Source and Open
 Science in general. However, given the scope of this journal, and the
 desire to encourage rigorous cheminformatics studies, we have decided
-not to created a thematic issue focused on COVID-19 related research
-submissions that are purely computational screens. This does not
-preclude research that addresses novel cheminformatics approaches and
-results, in the context of COVID-19.
+not to create a thematic issue focused on COVID-19, and rather
+continue to focus on actionable cheminformatics, irrespective of any
+specific disease. And when computational hypotheses are presented, we
+continue to require experimental validation.
 
-Indeed, the above discussion might suggest that the \emph{only} role
-of cheminformatics is to identify new therapeutic interventions. While
+The above discussion might suggest that the \emph{only} role of
+cheminformatics is to identify new therapeutic interventions. While
 this is a key and pressing role in the current pandemic, there are
 many other areas such as databases (e.g., ChEMBL \cite{chembl}, which
-underlies a number of virtual screening studies), protein features
-such as post-translational modifications, force fields,
-physicochemical properties and associated models that underly many of
-the approaches that one can use to identify new therapeutics. We would
-argue that these foundational areas are also critical to ensuring that
-when the need arises for computational methods to be applied to
-therapeutic development, that can do so on a solid foundation.
+underlies a number of virtual screening studies, the NCATS COVID-19
+OpenData Portal \cite{covid-ncats-paper} which rapidly disseminates in
+vitro screening data against multiple SARS-CoV-2 targets and the
+canSAR Coronavirus Discovery resource \cite{covid-cansar} which
+collates multiple molecular and clinical data types related to
+COVID-19), literature (e.g., CORD-19 \cite{covid-cord19} which has
+collated scholarly articles around SARS-CoV-2 and related
+coronaviruses to enable text mining research), protein features such
+as post-translational modifications, force fields, physicochemical
+properties and associated models that underly many of the approaches
+that one can use to identify new therapeutics. We would argue that
+these foundational areas are also critical to ensuring that when the
+need arises for computational methods to be applied to therapeutic
+development, they can do so on a solid foundation.
 
 Thus, we hope that cheminformatics researchers will consider the role
 of chemical information, methods and standards in the context of
 anti-viral research, and look forward to such submissions. But given
 the urgency of the current situation, and the need to focus resources
-on actionable outcomes, we have decided to not consider applications
-of well-known computational pipelines that simply result in lists of
-putative inhibitors of a SARS-CoV-2 enzyme without experimental
-validation.
+on actionable outcomes, we suggest that there are other platforms for
+the publication of lists of putative inhibitors of a SARS-CoV-2
+enzyme. The journal will continue to focus on studies which advance
+cheminformatics and can be applied both in this pandemic and in the
+next one.
 
 
 
